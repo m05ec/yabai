@@ -1,0 +1,18 @@
+#the page layout 
+yabai -m config layout bsp 
+yabai -m config window_placement second_child 
+# padding 
+yabai -m config top_padding 12
+yabai -m config bottom_padding 12
+yabai -m config lef_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 12
+#mouse settings 
+yabai -m config mouse_follows_focus on 
+yabai -m config mouse_modifier alt
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize 
+yabai -m mouse_drop_action swap 
+#add a list of apps we don't want yabai to manage 
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Burp Suit Professional$" manage=off
